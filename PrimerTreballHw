@@ -17,7 +17,7 @@ Carpeta sin título
 ·**vg**create vg1 /dev/sda1 /dev/sde1. -Crea un *nou grup* amb els volums fisics **"sda1, sde1"**
 
 **LV:** Logical Volume. Es la combinacio del **PV** i el **VG**, 
-
+![Titol](https://github.com/ism23867017/M01-Hardware/blob/master/Screenshot%20from%202017-04-06%2013-50-12.png)
 
 Entorn de pràctiques: Explicar com farem la pràctica detalladament (màquina virtual i afegir tres discs de 200M)
 Pràctica 1: Creació d'un volum lògic a partir d'un dels tres discs durs (vda per exemple). Aquest volum lògic ha de ser del total de capacitat del disc. El volum de grup s'ha de dir practica1 i el volum lògic dades.
