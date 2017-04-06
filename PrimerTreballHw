@@ -1,0 +1,32 @@
+# Títol: Gestió de Volums Lògics
+
+##  **Apartats:**
+
+
+Descripció del que són:
+---
+
+
+Què volen dir les sigles, definició, analogies i exemples de comandes (explicant què fan) vistes a classe de:
+
+**PV:** Physical Volume. Es un dispositiu que ens proporciona espai, que sera gestionat per el **LVM**.                                                           
+·**pv**create /dev/sdb. -Crea un nou disc. 
+Carpeta sin título
+**VG:** Volume group. Per poder usar el **PV** aquest deu pertànyer a un *"grup de volums"* 
+
+·**vg**create vg1 /dev/sda1 /dev/sde1. -Crea un *nou grup* amb els volums fisics **"sda1, sde1"**
+
+**LV:** Logical Volume. Es la combinacio del **PV** i el **VG**, 
+
+
+Entorn de pràctiques: Explicar com farem la pràctica detalladament (màquina virtual i afegir tres discs de 200M)
+Pràctica 1: Creació d'un volum lògic a partir d'un dels tres discs durs (vda per exemple). Aquest volum lògic ha de ser del total de capacitat del disc. El volum de grup s'ha de dir practica1 i el volum lògic dades.
+(pistes:  ...pvcreate /dev/vda ....  ...vgcreate practica1 /dev/vda....  lvcreate -l 100%FREE ..... )
+Pràctica 2: Creació d'un sistema de fitxers xfs al volum lògic creat i muntatge a /mnt. També s'ha de crear un fitxer amb dd de 180MB.
+(pistes: ....mkfs.xfs /dev/practica1/dades ..... mount /dev/practica1/dad ....  /mnt)
+Pràctica 3: Creació d'un RAID 1 als dos discos sobrants (vdb i vdc per exemple)
+(pistes: .... mdad.... --creat.. /dev/md0 --lev..=mirr.... --raid-devices=1 /dev/vdb /dev/vdc   comprobar fent cat /proc/mdstat......)
+Pràctica 4: Ampliació del volum lògic de dades al raid
+(pistes: pvcreate /dev/md0 .....vgextend practica1 /dev/md0 ...... lvextend -l 100%FREE /dev/practica1/dades......comprobar amb: lsbl.... i df -h )
+Pràctica 5: Ampliació del sistema de fitxers xfs al tamany actual del volum lògic dades (s'ha de poder fer sense desmuntar-lo de /mnt ja que és xfs). Una vegada creat crearem un nou fitxer de 180M.
+(pistes:   xfs_growfs /dev/practica1/dad... ...... comprobar amb: lsbl..... i df -h ...... cd /mnt ...... dd if=/dev/zero of=fitxer1.img bs=1k count=180000 ) 
