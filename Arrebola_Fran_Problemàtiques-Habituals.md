@@ -10,20 +10,34 @@ Descriu com arribes a aquestes conclusions (totes les possibilitats) en analitza
     RAM mal puesta: #Cuando la ram no esta bien conectada puede ser que el ordenador no encienda, o si encendiese se quemaria la placa directamente.#
     RAM rota: #El pc no iniciaria, o si ho fes no podria carregar el S.O .#
     
-    RAM medio rota: (unos KB mal)
-    Sin RAM:
-    Gráfica pinchada rota:
-    CPU rota/ no hay CPU/chipset roto
-    Placa rota
-    Placa medio rota
-    Teclado roto: Depende de la configuración de la BIOS (halt on all errors:All but keyboard).
-    Falta ratón: No se queja.
-    Falla CD/DVD: No se queja.
-    Falta Disco Duro/Disco sin formatear: Hará pitido POST OK. Mensaje de SYSTEM NOT FOUND.
-    BIOS mal flasheada: No arranca. No hay problema en el caso DUAL BIOS.
-    Disco duro con error SMART: Error POST. Hard drive SMART error. Permite omitir el error.
-    Pantalla rota/cable roto: Arranca con normalidad.
+    RAM medio rota: (unos KB mal) #Aixo provoca pantallazos blaus, reinicis de la maquina, i un pitjor funcionament a mesura que uses la maquina.#
+    
+    Sin RAM: #En aquest cas no s'inicia.
+    
+    Gráfica pinchada rota: #No mostrará senyal per pantalla, pero si cambies el cable al vga de la placa, ho mostrará. 
+    
+    CPU rota/ no hay CPU/chipset roto: #Quan engegas l'equip pitara i surtira un missatge de cpu Error.
+    
+    Placa rota: #No fa res, nomes pita repetidas vegades
+    
+    Placa medio rota: #Pot iniciar, pero no funcionaran certs components provocant errors catastrofics en cada moment, no arriba a arrencar el sistema.
+    
+    Teclado roto: Depende de la configuración de la BIOS (halt on all errors:All but keyboard). #Quan conectes el teclat i no s'encen cap llum, pero en un altra dispositiu funciona.
+    
+    Falta ratón: No se queja. #Quan conectes el mouse i no fa llum, pero en altra dispositiu funciona.
+    
+    Falla CD/DVD: No se queja. #Quan fa el post pot surtir un missatge avisant del error trobat, o be no fa cap llum.
+    
+    Falta Disco Duro/Disco sin formatear: Hará pitido POST OK. Mensaje de SYSTEM NOT FOUND. #Surt el missatge SELECT MEDIA BOOT, que vol dir que selecionem un dispositiu d'arrencada, pot ser que el disc estigui petat o que no estigui ben conectat a la font ni a la placa.
+    
+    BIOS mal flasheada: No arranca. No hay problema en el caso DUAL BIOS. #No iniciara el sistema, i si ho fa, es penajara cada poc i es reiniciara sol.
+    
+    Disco duro con error SMART: Error POST. Hard drive SMART error. Permite omitir el error. #Ens diu que el disc esta malament i necesita fer una copia de les dades per reemplaçarles.
+    
+    Pantalla rota/cable roto: Arranca con normalidad, pero si pruebas otra pantalla o cable, funciona.
+    
     USB del frontal cruzado: Puede quemar la placa. Puede quemar los pendrive.
 
     USB del frontal conectado mal en placa (otro conector que no es USB): Quema los pendrive (sobrevoltaje).
-    Pila de la BIOS esgotada
+    
+    Pila de la BIOS esgotada: #Cada vegada que inicies un sistema operatiu, la hora son les 00:00, surt la data de la bios de fábrica, i sol ocasionar errors al sistema.
