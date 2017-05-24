@@ -52,9 +52,7 @@
 
 
 	Anem a inicio, panel de control, sistema y seguridad, firewall de windows.
-	
-
-	
+	 	
         Es troba activat en aquest windows?
 	Si, l'acabo de connectar.
 
