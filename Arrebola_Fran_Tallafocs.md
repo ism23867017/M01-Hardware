@@ -1,5 +1,5 @@
 
-    Tallafocs
+    ++Tallafocs++
         Què es un sistema tallafocs? Quina és la seva finalitat?
 	Es un sistema de seguretat de la xarxa. Monitoreja i controla la entrada i sortida del trafic de la xarxa.
         Quines generacions de tallafocs hi ha hagut i què millorava cadascun?
@@ -22,10 +22,8 @@
 	A la de transport i la de xarxa.
 
 
-
-
-
-    Tallafocs Linux
+    ++Tallafocs Linux++
+    
         Busqueu quins són els tradicionals sistemes de tallafocs incorporats en linux i anomeneu-los
 	Iptables
 	UFW
@@ -46,15 +44,7 @@
         Comproveu si ara es pot seguir accedint.
 	No. 
 
-
-
-
-
-
-
-
-
-    Win7
+    ++Win7++
         Porta aquest SO algun tallafocs incorporat?
 	Si. El firewall el porta de serie.
         Arrenqueu una màquina win7 a isard.escoladeltreball.org
